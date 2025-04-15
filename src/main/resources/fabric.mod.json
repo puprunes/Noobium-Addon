@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "noobium",
+  "version": "${version}",
+  "name": "Noobium",
+  "description": "Literally an addon for meteor that adds stuff I Want",
+  "authors": [
+    "iPPC"
+  ],
+  "contact": {
+    "repo": "https://github.com/puprunes/Noobium/"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "pt.ippc.noobium.AddonTemplate"
+    ]
+  },
+  "mixins": [
+    "addon-template.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
